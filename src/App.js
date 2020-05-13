@@ -1,20 +1,17 @@
-import React from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
+import React from "react";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 
-import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
-
-import CreateBlog from './components/create-blog.component';
-import EditBlog from './components/edit-blog.component';
-import BlogList from './components/blog-list.component';
-
-
+import CreateBlog from "./components/create-blog.component";
+import EditBlog from "./components/edit-blog.component";
+import BlogList from "./components/blog-list.component";
 
 function App() {
   return (
@@ -32,7 +29,7 @@ function App() {
                 <Nav>
                   <Link to="/create-blog" className="nav-link">
                     Create Blog
-                    </Link>
+                  </Link>
                 </Nav>
                 {/* <Nav>
                   <Link to={"/edit-blog/:id"} className="nav-link">
@@ -42,7 +39,16 @@ function App() {
                 <Nav>
                   <Link to="/blog-list" className="nav-link">
                     Blog List
-                    </Link>
+                  </Link>
+                </Nav>
+                <Nav>
+                  <select>
+                    <option selected>select flavour</option>
+                    <option value="grapefruit">Grapefruit</option>
+                    <option value="lime">Lime</option>
+                    <option value="coconut">Coconut</option>
+                    <option value="mango">Mango</option>
+                  </select>
                 </Nav>
               </Nav>
             </Container>
@@ -62,7 +68,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
       </div>
     </Router>
   );
