@@ -31,24 +31,10 @@ function App() {
                     Create Blog
                   </Link>
                 </Nav>
-                {/* <Nav>
-                  <Link to={"/edit-blog/:id"} className="nav-link">
-                    Edit Blog
-                  </Link>
-                  </Nav> */}
                 <Nav>
                   <Link to="/blog-list" className="nav-link">
                     Blog List
                   </Link>
-                </Nav>
-                <Nav>
-                  <select>
-                    <option selected>select flavour</option>
-                    <option value="grapefruit">Grapefruit</option>
-                    <option value="lime">Lime</option>
-                    <option value="coconut">Coconut</option>
-                    <option value="mango">Mango</option>
-                  </select>
                 </Nav>
               </Nav>
             </Container>

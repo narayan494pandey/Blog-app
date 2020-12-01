@@ -11,7 +11,7 @@ let createError = require('http-errors');
 const blogRoute = require('../backend/routes/blog.route');
 
 
-// COnnect to mongoDB databASE
+// Connect to mongoDB database
 
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.db, {

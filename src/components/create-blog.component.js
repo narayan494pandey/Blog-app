@@ -61,7 +61,7 @@ export default class CreateBlog extends Component {
                     </Form.Group>
                     <Form.Group controlId="Blog">
                         <Form.Label>Write Blog</Form.Label>
-                        <Form.Control as="textarea" rows="10" cols="30" value={this.state.blog} onChange={this.onChangeBlog} />
+                        <Form.Control as="textarea" rows="20" cols="30" value={this.state.blog} onChange={this.onChangeBlog} />
                     </Form.Group>
                     <Button variant="danger" size="lg" block="block" type="submit">
                         Create Blog
